@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMLAR</h1>
+    <form action="result.html">
+
+<!--! TEXT -->
+      <div>
+         <label for="ad">*AD:</label>
+
+            <input id="ad" type="text" name="isim" value="" 
+            placeholder="Lütfen isim giriniz"
+            required />
+    <br>
+    <br>
+    <label for="soyad">SOYAD:</label>
+    <input id="soyad" type="text" name="soyisim" value=""
+    placeholder="Lutfen soyisim giriniz"
+    required>
+
+</div>
+<br>
+<!-- ! PASSWORD -->
+<div>
+
+<label for="pass">PASSWORD:</label>
+<input 
+id="pass" 
+type="text" 
+name="Password" 
+value="" 
+placeholder="Lutfen password giriniz" 
+minlength="4"
+maxlength="8"
+required
+/>
+
+</div>
+<br>
+<!-- ! RADIO BUTTON -->
+<div>
+    <!-- label ve input un yerini degistirirsen sayfada etiket ile radio nun da yeri degisir -->
+    <label for="erkek">ERKEK</label>
+    <input  id="erkek" type="radio" name="cinsiyet" value="erkek"  >
+
+
+<label for="woman">KADIN</label>
+<input id="woman" type="radio" name="cinsiyet" value="kadin">
+
+
+<label for="none">NONE</label>
+<input id="none" type="radio" name="cinsiyet" value="none">
+<!-- * radio tek biri check edilebilir.checked= ilk render da tikli gelsin -->
+</div>
+<br>
+<!-- ! CHECKBOX -->
+<label>Lutfen favori arabanizi seciniz</label>
+<br>
+<div>
+<label for="bmw">BMW</label>
+<input id="bmw" type="checkbox" name="araba1" value="bmw-clx"  >
+
+<label for="mer">MERCEDES</label>
+<input id="mer" type="checkbox" name="araba2" value="mercedes">
+
+<label for="audi">AUDI</label>
+<input id="audi" type="checkbox" name="araba3" value="audi-cti">
+
+<!-- checkbox istediginiz kadar isaretleyebilirsiniz -->
+
+</div>
+
+
+<div>
+    <br>
+    <input type="submit">
+</div>
+</form>
+
+
+
+
+</body>
+</html>
