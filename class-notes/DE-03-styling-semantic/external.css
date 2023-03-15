@@ -1,0 +1,47 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+p{
+    color: blue;
+}
+
+/* #par{
+    color: aqua;
+} */
+
+
+
+/* center div i icindeki p nin span i deyince boyle yan yana yazariz */
+.center p span{
+background-color: red;
+}
+
+
+
+/* ************************* */
+/* ic ice p lerin hepsini degistirmek istemiyorsak; */
+.center p{
+    color: coral;
+}
+
+/* center icindekibutun p ler ama div li olan p yi almaz */
+.center>p{
+    background-color: yellow;
+}
+
+
+/* sadece secici div inden sonraki a lar demek icin ~ kullaniyoruz.baska a larda olsaydi onlari etkilemez */
+.secici ~ a{
+    background-color: orange;
+}
+
+/* ilk a yi degistirmek istersek + ile kullaniriz */
+.secici +a{
+    background-color: lightblue;
+}
+
+/* external css de siralama önemli.hangisi en son ise aktuel olani alir.
+mesela div ve class ic ice ise hangisi en son geliyorsa onu alir */
+

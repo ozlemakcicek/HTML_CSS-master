@@ -1,90 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>FORMLAR</h1>
     <form action="result.html">
 
-<!--! TEXT -->
-      <div>
-         <label for="ad">*AD:</label>
+        <!--! TEXT -->
+        <div>
+            <label for="ad">*AD:</label>
 
-            <input id="ad" type="text" name="isim" value="" 
-            placeholder="Lütfen isim giriniz"
-            required />
-    <br>
-    <br>
-    <label for="soyad">SOYAD:</label>
-    <input id="soyad" type="text" name="soyisim" value=""
-    placeholder="Lutfen soyisim giriniz"
-    required>
+            <input id="ad" type="text" name="isim" value="" placeholder="Lütfen isim giriniz" required />
+            <br>
+            <br>
+            <label for="soyad">SOYAD:</label>
+            <input id="soyad" type="text" name="soyisim" value="" placeholder="Lutfen soyisim giriniz" required>
 
-</div>
+        </div>
+        <br>
+        <!-- ! PASSWORD -->
+        <div>
+
+            <label for="pass">PASSWORD:</label>
+            <input id="pass" type="text" name="Password" value="" placeholder="Lutfen password giriniz" minlength="4"
+                maxlength="8" required />
+
+        </div>
+        <br>
+        <!-- ! RADIO BUTTON -->
+        <div>
+            <!-- label ve input un yerini degistirirsen sayfada etiket ile radio nun da yeri degisir -->
+            <label for="erkek">ERKEK</label>
+            <input id="erkek" type="radio" name="cinsiyet" value="erkek">
+
+
+            <label for="woman">KADIN</label>
+            <input id="woman" type="radio" name="cinsiyet" value="kadin">
+
+
+            <label for="none">NONE</label>
+            <input id="none" type="radio" name="cinsiyet" value="none">
+            <!-- * radio tek biri check edilebilir.checked= ilk render da tikli gelsin -->
+        </div>
+        <br>
+        <!-- ! CHECKBOX -->
+        <label>Lutfen favori arabanizi seciniz</label>
+        <br>
+        <div>
+            <label for="bmw">BMW</label>
+            <input id="bmw" type="checkbox" name="araba1" value="bmw-clx">
+
+            <label for="mer">MERCEDES</label>
+            <input id="mer" type="checkbox" name="araba2" value="mercedes">
+
+            <label for="audi">AUDI</label>
+            <input id="audi" type="checkbox" name="araba3" value="audi-cti">
+
+            <!-- checkbox istediginiz kadar isaretleyebilirsiniz -->
+
+        </div>
+
+
+        <br>
+
+        <!-- ! NUMBER -->
+        <div>
+            <label for="age">YAS</label>
+            <input id="age" type="number" name="yas" value="0" max="100" step="2">
+        
+            <!-- max= gideblcgi son sayi, step= kacar kacar artmali -->
+        </div>
+        <br>
+
+        <!-- !  COLOR -->
+        <div>
+            <label for="color">RENK</label>
+            <input id="color" type="color" name="renk">
+        </div>
+        <br>
+
+
+        <!-- ! DATE -->
+        <div>
+            <label for="tarih">DATE</label>
+            <input id="tarih" type="date" min="2000-10-01" max="2023-10-01" name="tarih">
+            <!-- yil-ay-gun -->
+        </div>
+        <br>
+
+        <!-- ! DATE -->
+        <div>
+            <label for="tarih2">DATE</label>
+            <input id="tarih2" type="datetime-local" min="2000-10-01" max="2023-10-01" name="tarih2">
+            <!-- yil-ay-gun -->
+        </div>
+
+        <br>
+        <!-- ! E-MAIL -->
+        <div>
+            <label for=""></label>
+            <input type="email" name="email" value="" placeholder="example@gmail.com">
+        </div>
+        <!-- placeholder kutunun icerisinde silik gozukur.konulmasi lazim -->
+        <br>
+
+        <!-- ! TEL -->
+        <div>
+            <label for="">TEL</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="555-555-55-55">
+            <!-- araya bosluk degilde - tre de koyabilirsin.istedigini ekle -->
+        </div>
+
+        <!-- pattern sadece tel numarasinda kullanilir.sart.istege bagli.buna yazdigini ornek olsun diye kutunun icerisinde silik bu sekilde yaz diye gosterir -->
+        <br>
+
+        <!-- ! SELECT -->
+        <!-- input yerine select kullanilablr -->
+        <div>
+            <label for="tatli">hangi tatliyi seversiniz</label>
+            <select name="tatli" id="tatli">
+                <optgroup label="Serbetli tatlilar">
+                    <option value="künefe">Künefe</option>
+                    <option value="baklava">Baklava</option>
+                    <option value="sarma">Sarma</option>
+                    <option value="kadayif">Kadayif</option>
+                </optgroup>
+
+                <optgroup label="Sütlü tatlilar">
+                    <option value="muhallebi">Muhallebi</option>
+                    <option value="kazandibi">Kazandibi</option>
+                </optgroup>
+            </select>
+        </div>
+        <br>
+
+        <!-- ! DATALIST -->
+        <div>
+            <label for="marka">Sevdiginiz marka</label>
+            <input id="marka" list="markalar">
+            <datalist id="markalar">
+                <option value="Vakko"></option>
+                <option value="Beymen"></option>
+                <option value="Guess"></option>
+                <option value="Lacoste"></option>
+            </datalist>
+
+        </div>
+
+        <!--! datalist vs select ==>bir gereklilik ile bir öneri arasındaki fark olarak düşünün.  select, kullanıcının vermiş olduğunuz seçeneklerden birini seçmesi gerekir.  datalist, kullanıcının verdiğiniz seçeneklerden birini seçmesi önerilir, ancak aslında girdiye istediği her şeyi girebilir. -->
+
+        <!--! input list ile datalist in id si aynı olmalı ki liste çıksın -->
+        <br>
+
+
+        <!-- ! TEXTAREA -->
+        <div>
+            <label for="yorum">Yorumlarinizi giriniz</label>
+            <textarea name="yorum" id="yorum" cols="10" rows="10" style="resize:none" maxlength="100"></textarea>
+            <!-- cols ve rows u kendin ayarlayabilirsin.karakter sayisi burdaki -->
+            <!-- style a resize: yaz ve ordaki secenekler; vertical, horizontal, none seklinde kutunun boyutunu ayarlayablrsn -->
+        </div>
 <br>
-<!-- ! PASSWORD -->
-<div>
+        <div>
+            <input type="submit" value="Gönder">
+            <input type="reset">
+            <input type="button" value="kaydet">
+            <!--  value yu istedigin seyi yaz.hicbirsey yazmazsan bilgisayiarin dilinde yazar -->
+            <!--  submit de 3 tane input var.birisi backend icin  -->
+        </div>
 
-<label for="pass">PASSWORD:</label>
-<input 
-id="pass" 
-type="text" 
-name="Password" 
-value="" 
-placeholder="Lutfen password giriniz" 
-minlength="4"
-maxlength="8"
-required
-/>
-
-</div>
-<br>
-<!-- ! RADIO BUTTON -->
-<div>
-    <!-- label ve input un yerini degistirirsen sayfada etiket ile radio nun da yeri degisir -->
-    <label for="erkek">ERKEK</label>
-    <input  id="erkek" type="radio" name="cinsiyet" value="erkek"  >
-
-
-<label for="woman">KADIN</label>
-<input id="woman" type="radio" name="cinsiyet" value="kadin">
-
-
-<label for="none">NONE</label>
-<input id="none" type="radio" name="cinsiyet" value="none">
-<!-- * radio tek biri check edilebilir.checked= ilk render da tikli gelsin -->
-</div>
-<br>
-<!-- ! CHECKBOX -->
-<label>Lutfen favori arabanizi seciniz</label>
-<br>
-<div>
-<label for="bmw">BMW</label>
-<input id="bmw" type="checkbox" name="araba1" value="bmw-clx"  >
-
-<label for="mer">MERCEDES</label>
-<input id="mer" type="checkbox" name="araba2" value="mercedes">
-
-<label for="audi">AUDI</label>
-<input id="audi" type="checkbox" name="araba3" value="audi-cti">
-
-<!-- checkbox istediginiz kadar isaretleyebilirsiniz -->
-
-</div>
-
-
-<div>
-    <br>
-    <input type="submit">
-</div>
-</form>
+        <br>
+    </form>
 
 
 
 
 </body>
+
 </html>
