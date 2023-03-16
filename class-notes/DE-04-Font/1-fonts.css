@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@700&family=Audiowide&family=Quicksand:wght@300&family=Righteous&display=swap');
+
+
+@import url(https://fonts.googleapis.com/css?family=Silkscreen:regular,700);
+
+
+.birinci{
+    font-family: 'Andika', sans-serif;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Righteous', cursive;
+    background-color: lightgray;
+ 
+    
+}
+
+.menu{
+    font-size: 50px;
+    width: 250px;  
+    text-align: center;
+}
+
+.aktiv{
+    background-color: aqua;
+    font-family: silkscreen;
+}
+div{
+    background-color: pink;
+}
