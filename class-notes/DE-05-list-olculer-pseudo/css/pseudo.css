@@ -1,0 +1,107 @@
+table{
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+}
+
+tr:nth-child(odd){
+    background-color: pink;
+    color: yellow;
+}
+
+
+
+tr:nth-child(3){
+    background-color: aqua;
+}
+
+
+td:first-child{
+    color: red;
+    /*  no  stünu */
+
+font-weight: 900;
+}
+
+td:last-child{
+    font-style: italic;
+    font-size: 50px;
+}
+
+/* !bu asagidaki iconlar ile alakali ayar alani */
+tr::before, tr::after{
+font-family: "Font Awesome 5 Free";
+/* ! bunu yazmak mecburi */
+    font-weight: 900;
+    /* emoji koymak icin settings butonu ile yapablrz ama burdan bazi emojilerin uzerinde degisiklik yapilamiyor */
+    /* content: "😃"; */
+    content:"\1F606";   
+    /* content kısmına emoji yapıştırabiliriz ama bazı emojiler stil kabul etmiyor, bu yüzden  https://symbl.cc/en/collections/top-emoji/ adresinden emojinin css kod unu alıp gelmek daha sağlıklı .yine de bazi emojilerin rengi degismyr*/
+    color: red;
+    font-size: 40px;
+
+}
+
+tr:nth-child(3)::after, tr:nth-child(3)::before{
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+content: "\1F339";
+/* color: yellow;  bu emojinin rengi degismedi. */
+
+}
+
+td:hover{
+    background-color: lightgreen;
+    color: purple;
+}
+
+tr:hover{
+    background-color: gray;
+    color: blue;
+    /* font-size: 30px; etki etmeyecek.ustteki 50px gecerli olacak */
+}
+/* td lere verilen styl leri tr:hover ile ezemezsiniz.
+ama tr lere verilen stylleri td:hover ile ezebilirsiniz */
+
+
+
+button{
+    cursor: pointer;
+}
+
+.fa-solid{
+    font-size: 40px;
+}
+
+
+/* ilk sepetin classina birde icon ekledikki sadece bunu degistirmek icin kullaniriz.birden fazla class ismi verilebilir */
+.icon{
+    color: orange;
+    
+}
+
+
+/* .liste tr derseniz artik o gecerli olur.cunku diger tr lerden farkli olarak artik daha ozele girdik 
+.liste td
+.liste tr:hover gibi  */
+
+/*  datalar ozeldir onu row ile ezemezsin */
+
+a{
+    color: red;
+}
+
+a:visited{
+    color: orange;
+}
+
+
+/* maus da tusa bastigimiz an */
+a:active{
+    color: cyan;
+}
+
+a:hover{
+    font-size: 40px;
+    background-color: salmon;
+}
