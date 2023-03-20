@@ -1,0 +1,48 @@
+img{
+    width: 50%;
+    /* ikiside ekranin 50% sini kapla dedik */
+}
+
+
+.img1{
+    float: right;
+
+    
+}
+
+.temizle{
+clear: both;
+/* clear:both dersek ne float left den ne float right dan etkilenmez */
+
+/*bu bir alt yazidir yazisi burasi.dedikki clear ile ekran buyuse de kuculsede float dan etkilenme ve yapisma yerinde kal dedik  */
+}
+
+
+.box{
+    height: 2rem;
+    float: left;
+    /* bunu yapmazsak hepsi alt alta gelir.box2 deki clear sayseinde box2nin alti etkilenmez yukaridaki img nin floatindan etkilenir ve sabit kalir.onu da kaldirirsak buyutup kucultunce karisir hepsi*/
+}
+
+
+
+.box1{
+    background-color: rgb(187, 28, 187);
+    /* clear: right;    burda da yaparsin yukarida da ama ben yukarida yapayim simdi */
+    /* float: left; */
+    width: 20%;
+}
+
+.box2 {
+    background-color: orange;
+    /* float: right; */
+    width: 30%;
+    /* clear: both; */
+    /* bu altindaki box3 u de etkiler.ustundeki float lefti iptal eder */
+}
+
+.box3 {
+    background-color: aqua;
+    width: 40%;
+    /* clear: both;  buyutunce kucultnce etkilenmesin diye,sabitlestirmek icin bkullanablrz */
+}

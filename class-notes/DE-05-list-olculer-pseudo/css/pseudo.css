@@ -2,6 +2,8 @@ table{
     width: 100%;
     height: 300px;
     font-size: 30px;
+    /* border-collapse: collapse; */
+    /* bununla butun border kenarliklarini kaldirr */
 }
 
 tr:nth-child(odd){

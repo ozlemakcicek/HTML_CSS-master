@@ -1,0 +1,58 @@
+/* *{margin: 0;} */
+
+.btn{
+    background-color: beige;
+    margin-top: 1rem;
+    /* en dis div e margin-top 1 rem =16px verince herbir divin ustune 1rem vermis oldu */
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+
+
+    /* bunlari tek tek yazmak yerine tek satirda yan yana da yazabiliriz.en guncel gecerli olur */
+    margin: 2rem;
+    margin: 1rem 2rem 3rem 4rem;
+    margin: 3rem 2rem;
+    /* margin: 3rem 2rem; bu alt-ust ve sag-sol seklinde */
+    margin: 1rem 2rem 3rem;
+    /* margin: 1rem 2rem 3rem;  ust sag-sol alt .sag ve sol ikisi de 2rem seklinde*/
+
+
+    padding: 1rem;
+    /* yazinin kendi divini cevresini genisletir */
+    padding-left: 3rem;
+}
+.span-btn{
+    background-color: burlywood;
+    /* inline elementlere width height verilmiyor yani bir ise yaramiyor asagidaki.img ler istisna */
+width: 50vw;
+height: 50vw;
+
+/* inline elementlerde marginlerden de sag-sol isler, alt-ust margin islemez */
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+
+
+    /* inline elementlerde padding kullanilinca 4 taraftanda alir fakat komsulari itemediginden onlarin alanina mudahale eder 
+    
+    inline elementler; image, button, input, select, textarea, label, span, codesub,sup,strong,i,em,b,br,a*/
+
+    padding: 1rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+}
+.new-btn{
+    background-color: red;
+    width: 20vw;
+    height: 20vw;
+
+    /* text-align: center; inline elementlerde ve text lerde sadece ise yarar ve ortalar */
+
+    margin: 2rem auto;
+/* }div gibi blok elementleri margin sag-sol u auto yaparak ortalariz */
+
+/* float ozelligi de resimler ve divler icin kullanilir.float:left dersek mesela sola yanas deriz ve sanki resim yokmus gibi geri kalan seyleri buldugu bosluktan itibaren yanina yazmaya baslar
+float ozelligini yok saymak icin clear tagini kullanabiliriz */
+
