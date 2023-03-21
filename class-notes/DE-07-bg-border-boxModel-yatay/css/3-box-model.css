@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* once width vermeden box-sizing li ve box-sizing siz olanlara bakalim.bi degisiklik olmaz */
+.olcusuz-box{
+    background-color: orange;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 0.8rem;
+
+    /* belli bir widt olmadigi durumda box-sizing:border-box gecerli olmaz. */
+    box-sizing: border-box;
+}
+
+.olcusuz-content{
+    background-color: yellow;
+    border: 15px solid red;
+        padding: 50px;
+        margin: 20px 85px;
+        font-size: 0.8rem;
+}
+
+
+/* simdi width height vererek box-sizing li ve box-sizingsiz olnlari gorelim. */
+.box{
+    background-color: lightgreen;
+    border: 15px solid red;
+        padding: 50px;
+        margin: 20px 85px;
+        font-size: 0.8rem;
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        /* box-sizing vermeyince padding ile border cercevesi ile 300px li asiyor.
+        ama bana 300px lik alana sigdir denilirse o zaman border-box yazarak 300px e sigdirmak icin kucultur borderi */
+}
+
+.content{
+    background-color: lightgreen;
+        border: 15px solid red;
+        padding: 50px;
+        margin: 20px 85px;
+        font-size: 2rem;
+        width: 300px;
+        height: 300px;
+        
+        /* box-sizing: content-box;  bu zaten width verirsek default degerdir yazmaya gerek yok */
+}

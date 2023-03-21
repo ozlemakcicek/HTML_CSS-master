@@ -1,0 +1,18 @@
+.bg{
+    height: 50vh;
+    /* height: 50vh; boydan ekranin yuzde 50 sini kaplar
+    width:50vw dersek ise ekranin enden yuzde  50sini kaplar */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* ? resmi fixledik.yazilar kayarken resim kipirdamiyor */
+    
+}
+
+.div1{
+    background-image: url(../img/monalisa.jpeg);
+}
+
+.div2{
+    background-image: url("https://cdn.pixabay.com/photo/2022/07/15/20/13/strawberries-7323943__480.jpg");
+}
