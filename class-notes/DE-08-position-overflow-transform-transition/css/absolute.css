@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+    border: 2px solid red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: crimson;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+
+    /*  position vermeyince bir turlu top left ler calismiyor*/
+}
+
+.box2 {
+    background-color: cadetblue;
+    position: absolute;
+    top: 50px;
+    /* burda kendi yerinden itibaren 50px asagi indirmis oldu.
+    margin olsaydi diger kutudan itibaren 50px indirir arasini ayirirdi */
+
+    /* top una verilen deger eski pozisyonunun bottom indan itibaren */
+
+    top: 10px;
+    left: 40px;
+}
+.container {
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+    left: 100px;
+    /* su an calismiyor bunlar.position verecegiz.sadece container i tasimak istedigimiz icin relativ verecegiz */
+    position: relative;
+    top: 100px;
+    left: 100px;
+}

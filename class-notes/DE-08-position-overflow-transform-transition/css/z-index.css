@@ -1,0 +1,45 @@
+.box{
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid black;
+}
+
+
+/* ! z-index kullanabilmek icin mutlaka bir position özelligi kullnamak lazim */
+.box1{
+    background-color: salmon;
+    position: absolute;
+    /* body nin cocugu gubi davrandi absolut ile ve bir alt katmana cikti.bunu gormek icin usttekine bir opacity degeri verelim */
+
+    /* en son yapilan en guncel olacagi icin asagi indikce en ustte box4 gozukecek  */
+    left: 50px;
+    z-index: -1;
+}
+
+.box2{
+    background-color: rgb(112, 146, 129);
+    position: absolute;
+   /* box2 de position absolute ile bir ust katmana cikti. */opacity:0.7 ; 
+   left: 70px;
+   top: 50px;
+   z-index: -2;
+}
+
+.box3 {
+    background-color: rgb(99, 85, 205);
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 500;
+
+}
+
+
+.box4 {
+    background-color: rgb(239, 214, 57);
+    position: absolute;
+    z-index: -4;
+}
+
+
+/* !z- index ler arkadan one yani kucukten buyuge dogru gider. en kucuk degeri olan en altta kalacak.box3 e 500 vermemizin nedeni onun ustune hicbirsey gelmesin diye */

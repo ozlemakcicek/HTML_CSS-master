@@ -1,0 +1,32 @@
+.box{
+    border: 2px solid red;
+    width: 20rem;
+    height: 6rem;
+    margin-bottom: 5rem;
+
+    /* bunlari tasmayi gorelim diye yaptik */
+}
+
+.box1{
+    overflow: visible;
+    /* zaten default degeri bu degisiklik olmaz */
+}
+
+.box2{
+    overflow: hidden;
+
+    /* tasma olmasin tasacak kisimlar gizlensin dersek overflow:hidden kullaniriz */
+}
+
+.box3{
+    overflow: scroll;
+
+    /* scroll yanda gozukmus oldu.ama eger gozukmesin  sadece metin borderdan tasiyorsa gozuksun istersek auto kullanmaliyiz */
+}
+
+.box4{
+    overflow: auto;
+
+    /* text-align da default olarak overflow:auto var. */
+
+}

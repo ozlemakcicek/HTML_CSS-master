@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1000px;
+    border: 2px solid red;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: crimson;
+    position: relative;
+    top: 50px;
+    left: 70px;
+
+    /*  position vermeyince bir turlu top left ler calismiyor*/
+}
+
+.box2{
+    background-color: cadetblue;
+    position: relative;
+    top: 50px;
+    /* burda kendi yerinden itibaren 50px asagi indirmis oldu.
+    margin olsaydi diger kutudan itibaren 50px indirir arasini ayirirdi */
+
+/* top una verilen deger eski pozisyonunun bottom indan itibaren */
+
+top: 10px;
+left: 40px;
+}
+
+
+
+
+/* ! eger kutularin yerini degistirmek istersek html de yerleri degistir ve body ye relativ ver */
