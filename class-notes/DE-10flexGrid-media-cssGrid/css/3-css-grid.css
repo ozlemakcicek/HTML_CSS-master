@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    grid-template-columns: 150px 300px 250px;
+    grid-template-rows: 150px 300px 100px;
+}
+
+/* ? bu yol iyi ama px degilde herbir ekrana uysun istersek baska bir yolu deneyecegiz.fraksiyon responsiv olsun istiyoruz */
+
+.parca{
+    background-color: pink;
+    /* border: 1px solid red; */  /*ilk etapta gormek icin kullanalim
+}
+.parca1{
+    background-image: url(../../assets/img/logo_colorful.png);
+    background-size: cover;
+    /* resim buyuk olunca gozukmez o nedenle cover yapiyoruzki buyuksede sigdirsein alanina */
+
+    /* ?ortalama icin bu da kullanilan bir yontem */
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.parca4{
+    overflow: auto;
+    /* sigmazsa scroll bar cikartsin dedik */
+}

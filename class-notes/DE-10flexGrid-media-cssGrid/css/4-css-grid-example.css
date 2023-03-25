@@ -1,0 +1,65 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);   /*4 kere 1fr lik o.s de bol columnlari dedik
+    /* yukaridakinin uzun halide bu */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-rows: repeat(4,15vh) 20vh;
+
+    /* ? 4 columnu 1 fr ayarla deyince 5.column dahil olmadigi icin kucuk kalir
+    /* ?20vh su demek tasan varsa onu da 20vh olacak sekilde yerelstirdik dedik */ */
+
+    gap: 10px 15px;
+   
+}
+
+.parca{
+    background-color: yellowgreen;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parca1{
+    background-color: pink;
+    grid-column-start: 1;
+    grid-column-end: 3;
+} /* 1.column dan başla 3. column a  kadar (3 dahil değil) beni büyüt */
+
+.parca4{
+    background-color: orange;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* 2.rowdan basla 4.rowa kadar 4 daihl degil */
+}
+
+
+
+.parca6{
+    background-color: rgb(172, 100, 172);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end:5 ;                                                                                                
+    
+    /* !KISA YOL */
+grid-area: 2/3/span 3/span 2;
+/* 2 den basla 3 e git 3er row 2 tane column dan birlestir */
+    
+} 
+
+.parca8 {
+    background-color: yellow;
+    /* grid-row:5; */
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.parca9{
+    background-color: aqua;
+    /* grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column: 3; */
+        grid-area: 4/3/span2/span1;
+}

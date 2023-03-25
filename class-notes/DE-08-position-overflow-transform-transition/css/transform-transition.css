@@ -20,12 +20,21 @@
     transform: rotateZ(10deg)
  }
 
+
  .yazi4{
     background-color: red;
     
  }
+ .yazi5{
+    background-color: blueviolet;
+ } 
+ 
+ 
+ /* ! ********** SCALE ************* */
+ .yazi5:hover{
+transform:scaleY(0.5) }
 
- .yazi:active{
+ .yazi4:active{
     transform: scale(2,0.5);
  }
 
@@ -36,30 +45,36 @@
     width: 100px;
     font-weight: 800;
     height: 50px;
+    padding: 10px;
+    transition: transform 5s;
 }
 
-/* .x{
-    transform: translateX(50px);
-} */
+
+/* ! TRANSITION:  */
+
+
+/* transition:background-color 1s, color 5s, font-size 4s; */
+/* transition: background-color 1s, color 5s, font-size 4s ease-in 1s; */
+/* 1sn bekle sonra yavaşça 4sn de font-size değişsin */
+
+
 /* bunu birde hover halinde deneyelim */
 
 .x:hover{
     transform: translateX(50px);
 }
 
-.y:active{
-    transform: translateY(100px);
-
-}
-
-
+/* 50px sağa git */
+.y:hover {
+    transform: translateY(-50px);}
+    /* - olduğu için 50px yukarı git. + olsaydı aşağı giderdi */
 
 .xy:active{
-    transform: translate(150px,150px);
+    transform: translate(50px,-50px);
 }
-/* .btn-div{
+.btn-div{
     text-align: center;
-}
+ }
 
 .btn{
     background-color:rgb(8, 129, 170);
@@ -67,4 +82,16 @@
     padding:20px;
     font-size: 1.3rem;
     border-radius: 5px;
-} */
+    margin-bottom: 50px;
+} 
+.btn:hover {
+    background-color: burlywood;
+    color: white;
+    font-size: 5rem;
+    transition: background-color 1s, color 5s, font-size 4s;
+    transition: background-color 1s, color 5s, font-size 4s ease-in 1s;
+    transition: all 4s ease-in 1s;
+    /* transition:background-color 1s, color 5s, font-size 4s; */
+        /* transition: background-color 1s, color 5s, font-size 4s ease-in 1s; */
+        /* 1sn bekle sonra yavaşça 4sn de font-size değişsin */
+}
