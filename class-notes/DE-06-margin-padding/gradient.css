@@ -1,0 +1,43 @@
+p{
+    height: 10vh;
+}
+
+
+.header1{
+    background-image: linear-gradient(yellow,green);
+}
+
+.header2{
+    background-image: linear-gradient(rgb(222, 222, 57),rgb(87, 186, 87),rgb(185, 71, 90), rgb(137, 13, 137));
+}
+
+.header3{
+    background-image: linear-gradient(to right,rgb(222, 222, 57),
+        rgb(87, 186, 87),
+        rgb(185, 71, 90),
+        rgb(137, 13, 137));
+}
+
+.header4{
+    background-image: linear-gradient(45deg,yellow, green, blue);
+}
+
+.header5{
+
+    /*  linear -gradient :yukaridan asagiya, radial-gradient: circle */
+    background-image: radial-gradient(yellow 20%,
+    rgb(91, 218, 91) 50%,
+    hsl(300, 58%, 51%));
+}
+
+.header6{
+
+    /*  tekrarli renk gecisi icin */
+    background-image: repeating-radial-gradient(yellow,green 15%,blue 20%);
+}
+
+.header7 {
+    background-image: linear-gradient(to right, #7622da 11%, #47c6eb 11%, #47c6eb 29%, #ed5f1f 29%, #ed5f1f 60%, #f59f28 60%, #f59f28 75%, #6b1e5b 75%, 88%, #45b794 88%, #45b794 100%);
+}
+
+/* 0-11= #7622da. 11-29=#47c6eb. 29-60=#ed5f1f. 60-75=#f59f28. 75-88=#6b1e5b. 88-100=#45b794 */
