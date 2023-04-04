@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//********************************************/
+//* Variable Declaration
+//********************************************/
+
+$bgColor: pink;
+$fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fontSize: 1.2rem;
+$fontColor: white;
+$navBgColor: #30a7c3;
+$bannerBgColor: hotpink;
+$myBorder: 2px solid hotpink;
+$buttonColor: rgb(224, 169, 169);
+
+
+body {
+    background-color: $bgColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+//*******  HEADER *********/
+
+header {
+    background-color: $navBgColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    img {
+        width: 100px;
+        border: $myBorder;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    ul {
+
+        li {
+            display: inline-block;
+            padding: 1rem;
+
+            a {
+                color: $fontColor;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: $bgColor;
+                border-radius: 10px;
+
+                a {
+                    color: $navBgColor;
+                }
+            }
+        }
+
+    }
+}
+
+//*******  BANNER *********/
+
+.banner {
+    background-color: $bannerBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+
+    aside {
+        button {
+            padding: 0.5rem;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+            background-color: $buttonColor;
+            border: none;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: pink;
+            }
+        }
+    }
+
+    img {
+        width: 30%;
+        min-width: 250px;
+        max-width: 400px;
+    }
+
+}
+
+
+//!      @MIXIN  //************
+
+@mixin myBox($backColor, $color){
+        background-color: $backColor;
+        color: $color;
+        width: 25%;
+        height: 15rem;
+        border: 2px solid red;
+        border-radius: 10px;
+
+}
+
+.cards{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    .card1{
+       @include myBox(darkorange, yellow)
+    }
+
+
+
+    .card2{
+        @include myBox(blue,yellow)
+    }
+
+
+    .card3{
+        @include myBox(yellow, blue)
+    }
+
+
+    .card4{
+        @include myBox(rgb(240, 85, 111),green)
+    }
+}
+
+
+
+//! @EXTEND
+//***********************
+.articles{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+
+
+
+    .article1{
+        background-color: gray;
+        width: 50%;
+        height: 10rem;
+border: 2px solid red;
+        border-radius: 10px;
+
+    }
+
+    .article2{
+        @extend .article1;
+        background-color: hotpink;
+        border-color: black;
+    }
+}
+
+
+
+//***********FOOTER******/
+
+//***************
+//! FOR LOOP
+//******************
+
+//! IF ELIF ELSE
+//****************
+
+
+
+footer{
+    $dark:3;
+
+
+    p{
+        @if $dark==1{
+            background-color: darkorange;
+
+        } @else if $dark==2{
+            background-color: grey;
+
+        }
+        @else{
+            background-color: magenta;
+
+        }
+    }
+}
+
+
+.social-icons{
+    display: flex;
+    height: 10rem;
+    $textColor: #990000,
+        #55004E,
+        #0FA8A1,
+        #121456,
+        #c23f17;
+
+@for $i from 1 through 5{
+    .social#{$i} {
+        width: 20%;
+        background-color: blue;
+        font-size: $i*1rem;
+        color:nth($textColor, $i);
+        background-color: lighten(blue, 5*$i);
+    }
+}
+
+
+
+
+}
