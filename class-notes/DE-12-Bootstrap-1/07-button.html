@@ -11,7 +11,11 @@
 
 <body>
 <!-- container divi ile sarmallariz ve bu default olarak ortalar yapiyi.olmazsa yapistirr sola -->
-    <div class="container">
+    
+<!-- button etiketi aciyoruz ve classi btn yapiyoruz.default olarak btn borderli border radius lu gelir
+eger kare button istersek ezmeliyiz yani border radius=0 demeliyiz -->
+
+<div class="container">
         <h2>CLASSIC BUTTONS</h2>
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-secondary">Secondary</button>
@@ -25,6 +29,9 @@
     </div>
 
     <br> <br>
+
+    <!-- btn btn-outline-* burda verdigin color basili degilken text rengi ve beyaz button seklindedir
+    basilinca tersi olur.yazi beyaza button verdigin color a doner  -->
     <div class="container">
         <h2>OUTLINE BUTTONS</h2>
         <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -38,6 +45,8 @@
         <button class="btn btn-info btn-outline-success">Loginn</button>
     </div>
     <br> <br>
+
+    <!-- button-lg(large)   button-sm(small)  . disabled deyince basilamayan button yaparsin -->
     <div class="container">
         <h2> BUTTONS -SIZE</h2>
         <button type="button" class="btn btn-primary btn-lg" disabled>Primary</button>
@@ -48,8 +57,11 @@
     </div>
     <!-- disabled=butonu silikleştirmek yani kullanım dışı effect i vermek için kullanılır .basilmiyor uzerine-->
     <br>
+
+
+    <!-- ayni anda birsuru button istersek button group linkini aliriz bootstrapten.yanyana bitisik buttonlar icin classi btn-group yapisini aynen getiririz -->
     <h2 class="text-center">BUTTON-GROUP</h2>
-    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+    <div class="btn-group ms-5" role="group" aria-label="Basic mixed styles example">
 
 
         <!-- asagidaki buton linkini bootstrap sitesinden alip kopyaladim burda -->
@@ -58,6 +70,8 @@
         <button type="button" class="btn btn-success">Right</button>
     </div>
 
+
+    <!-- bootstrap de container divi default olarak sagdan soldan boslukla gelir -->
 </body>
 
 </html>
